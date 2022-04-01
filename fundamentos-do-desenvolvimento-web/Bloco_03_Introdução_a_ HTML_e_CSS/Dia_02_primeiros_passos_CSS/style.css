@@ -1,0 +1,26 @@
+<style>
+      h1 {
+        font-family: sans-serif; 
+      }
+      p {
+        font-weight: 600;
+        font-size: 3em;
+      }
+      body {
+        font-size: 16px;
+        background-color: rgb(72, 160, 219);
+      }
+      #list { 
+        font-style: oblique;
+        line-height: 120%;
+        text-align: center; 
+      }
+      #l1 {
+        background-color: yellow;
+      }
+      #l2 {
+        background-color: red;
+      }
+      #l3 {
+        background-color: brown;
+      }
