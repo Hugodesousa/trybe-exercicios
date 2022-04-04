@@ -1,3 +1,23 @@
 div:hover {
     background-color: blue;
 }
+#c1 {
+color: rgb(26, 182, 65);
+}
+#c2 {
+    color: rgb(209, 198, 47);
+    }
+#c3 {
+color: brown;
+font-size: 200%;
+}
+#c4 {
+    color: rgb(17, 15, 15);
+    }
+#c5 {
+color: rgb(173, 216, 219);
+}
+
+#c1, #c3, #c5 {
+    font-style: italic;
+}
