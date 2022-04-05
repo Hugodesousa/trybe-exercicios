@@ -1,0 +1,32 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ol li:nth-child(even){
+	background: yellow;
+    font-weight: 700;
+}
+ol li:nth-child(odd){
+	background: green;
+    font-weight: 700;
+}
+.header {
+    color: red;
+}
+h1 {
+    font-size: 40px;
+    border: solid 1px;
+}
+.list li {
+    font-size: 20px;
+}
+.java {
+    background-color: pink;
+}
+.py {
+    background-color: blue;
+}
+.list2 li:hover {
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+
+}
