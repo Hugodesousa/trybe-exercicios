@@ -1,9 +1,9 @@
 
-const a = 10;
-const b = 9;
+const x = 10;
+const y = 9;
 
-if (a > b) {
-  console.log("a maior que b");
+if (x > y) {
+  console.log("x maior que y");
 } else {
-  console.log("b é maior que a");
+  console.log("x é maior que y");
 };
