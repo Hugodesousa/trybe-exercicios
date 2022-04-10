@@ -5,7 +5,7 @@ switch (nota) {
     console.log("Você foi reprovada(o)");
     break;
 
-    case nota => 60 && nota < 80:
+    case (nota => 60 && nota < 80):
     console.log("Você está na nossa lista de espera");
     break;
 
