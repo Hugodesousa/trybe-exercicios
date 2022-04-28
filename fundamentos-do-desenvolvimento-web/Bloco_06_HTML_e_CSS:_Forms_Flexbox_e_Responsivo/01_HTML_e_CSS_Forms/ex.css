@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+header {
+    text-align: center;
+    margin-top: 25px;
+}
+
+main {
+    
+    margin: 10px;
+}
+
+main form{ 
+    display: block;
+    background-color: red;
+    width: 90%;
+    padding: 30px;
+}
+.ident {
+    
+}
