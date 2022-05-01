@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Hugo de Sousa](LinkDoSeuLinkedinAqui)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Hugo de Sousa](www.linkedin.com/in/hugo-de-sousa-trybe-student)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 "A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
@@ -22,40 +22,40 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- [x] 3-1: _HTML & CSS - Estruturas de pÃ¡gina_
+- [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [ ] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-4: _HTML Semântico_
+- [x] 3-5: _[Projeto - HTML & CSS]()_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [ ] 4-1: _JavaScript - Primeiros passos_
-- [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - Logica de Programação e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e funções _
-- [ ] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-1: _JavaScript - Primeiros passos_
+- [x] 4-2: _JavaScript - Array e loop For_
+- [x] 4-3: _JavaScript - Logica de Programação e Algoritmos_
+- [x] 4-4: _JavaScript - Objetos e funções_
+- [x] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
-- [ ] 5-1: _JavaScript - DOM e seletores_
-- [ ] 5-2: _JavaScript - Trabalhando com elementos_
-- [ ] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [ ] 5-6: _[Projeto - Arte com Pixels]()_
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [x] 5-1: _JavaScript - DOM e seletores_
+- [x] 5-2: _JavaScript - Trabalhando com elementos_
+- [x] 5-3: _JavaScript - Eventos_
+- [x] 5-4: _JavaScript - Web Storage_
+- [x] 5-5: _[Projeto - Meme Generator]()_
+- [x] 5-6: _[Projeto - Arte com Pixels]()_
+- [x] 5-7: _[Projeto - Lista de tarefas]()_
+- [x] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [x] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avanÃ§ado
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
@@ -83,7 +83,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [ ] 10-1: _Primeiros passos no Jest_
 - [ ] 10-2: _Jest - Testes Assí­ncronos_
 - [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
+- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -96,7 +96,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### Bloco 12: React
 
 - [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulÃ¡rios no React_
+- [ ] 12-2: _Eventos e formularios no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
@@ -121,7 +121,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 - [ ] 16-1: _Introdução ao Redux_
 - [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - PrÃ¡tica_
+- [ ] 16-3: _React com Redux - Pratica_
 - [ ] 16-4: _React com Redux - Parte 2_
 - [ ] 16-5: _Testes síncronos com React-Redux_
 - [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
@@ -147,7 +147,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 - [ ] 20-1: _Banco de dados SQL_
 - [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma especÃ­fica_
+- [ ] 20-3: _Filtrando dados de forma especifica_
 - [ ] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
 
@@ -187,7 +187,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### Bloco 26: Intro - NodeJS
 
 - [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo AssÃ­ncrono_
+- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
 - [ ] 26-3: _NodeJS - Arquitetura_
 - [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
@@ -199,7 +199,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Bloco 28: NodeJS
 
-- [ ] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
+- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
 - [ ] 28-2: _Arquitetura web - Rest e Restful_
 - [ ] 28-3: _[Projeto - Store Manager]()_
 
@@ -221,10 +221,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ##### Bloco 32: Arquitetura de Software
 
-- [ ] 32-1: _Arquitetura - PrincÃ­pios SOLID_
-- [ ] 32-2: _ORM - Interface da aplicão com o banco de dados_
+- [ ] 32-1: _Arquitetura - Princípios SOLID_
+- [ ] 32-2: _ORM - Interface da aplicacão com o banco de dados_
 - [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas prÃ¡ticas na escrita de testes_
+- [ ] 32-4: _Boas praticas na escrita de testes_
 - [ ] 32-3: _[Projeto - API de Blogs]()_
 
 ##### Bloco 33: Sockets
@@ -243,7 +243,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 - [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e seguranÃ§a_
+- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
 - [ ] 35-4: _[Projeto - Explorando os protocolos]()_
 
 ##### Bloco 36: Python
