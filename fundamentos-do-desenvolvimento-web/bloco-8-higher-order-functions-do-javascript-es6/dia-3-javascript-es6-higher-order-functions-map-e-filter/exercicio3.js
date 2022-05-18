@@ -60,8 +60,8 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  const resume = () => {
-    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
-  };
-console.log(resume())
+
+  function fantasyOrScienceFiction(array) {
+   return array.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia')
+  }
+  console.log(fantasyOrScienceFiction(books))

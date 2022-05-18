@@ -61,7 +61,12 @@ const books = [
     },
   ];
   
-  const resume = () => {
-    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+  const constructor = (arrayBooks) => {
+    const arrayAuthor = []
+    return arrayBooks.map(book => ({ 
+       author: book.author.name,
+       age: book.releaseYear - book.author.birthYear,
+      })).sort((a, b) => a.age - b.age )
+    
   };
-console.log(resume())
+   console.log(constructor(books))

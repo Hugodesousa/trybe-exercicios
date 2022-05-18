@@ -60,8 +60,9 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  const resume = () => {
-    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
-  };
-console.log(resume())
+
+  function oldBooksOrdered(array) {
+    let oldBooks = array.filter((book) => book.releaseYear < 1962)
+    return oldBooks.sort((a, b) => a.releaseYear - b.releaseYear)
+  }
+  console.log(oldBooksOrdered(books))

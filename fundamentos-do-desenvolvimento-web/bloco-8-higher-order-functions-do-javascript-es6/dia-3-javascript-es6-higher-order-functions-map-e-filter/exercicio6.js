@@ -60,8 +60,9 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  const resume = () => {
-    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
-  };
-console.log(resume())
+
+  function oldBooks(array) {
+    return array.filter(book => book.releaseYear < 1962)
+    .map((book) => book.name)
+  }
+console.log(oldBooks(books))

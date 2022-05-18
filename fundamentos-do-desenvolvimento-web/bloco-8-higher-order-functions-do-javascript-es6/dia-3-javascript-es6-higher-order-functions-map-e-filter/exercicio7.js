@@ -60,8 +60,14 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  const resume = () => {
-    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
-  };
-console.log(resume())
+
+  const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName(array) {
+  return array.filter((book) => {
+      book.author.name[1] === '.'
+      && book.author.name[4] === '.'
+      && book.author.name[7] === '.'
+  })
+}
+console.log(authorWith3DotsOnName(books))
