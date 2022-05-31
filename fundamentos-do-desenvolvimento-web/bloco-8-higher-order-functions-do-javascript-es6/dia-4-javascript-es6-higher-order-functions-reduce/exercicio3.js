@@ -64,10 +64,6 @@ const books = [
 /*   const expectedResult = 43; */
 
   function averageAge(array) {
-      const age = array.reduce((acc, cur) => {
-          console.log(acc)
-      
-
+      return array
   }
-
   console.log(averageAge(books))
