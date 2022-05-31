@@ -1,9 +1,40 @@
-const pushNumber = (list, number) => list.push(number);
+// EX 1
 
-let numbers = [];
+/* const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
+const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
 
-pushNumber(numbers, 1);
-pushNumber(numbers, 2);
-pushNumber(numbers, 3);
+const getUser = (callback) => {
+  const userToReturn = {
+    firstName: "Ivan",
+    lastName: "Ivanovich",
+    nationality: "Russian"
+  };
+  return callback(userToReturn);
+  // Insira o retorno da função `getUser`
+};
 
-console.log(numbers);
+console.log(getUser(userFullName)); // complete a chamada da função getUser de modo que o retorno seja: "Hello! My name is Ivan Ivanovich"
+console.log(getUser(userNationality)); // complete a chamada da função getUser de modo que o retorno seja: "Ivan is Russian" */
+
+// EX 2
+
+const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
+const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+
+const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
+
+const getUser = (callback) => {
+  setTimeout(() => {
+    const user = {
+      firstName: "Ivan",
+      lastName: "Ivanovich",
+      nationality: "Russian",
+    };
+    // Retorne a `callback` passada como parâmetro na função `getUser`
+    // Dica: você pode manter o `console.log()`
+    console.log(callback(user));
+  }, delay());
+};
+
+getUser(userFullName); // deve imprimir "Hello! My name is Ivan Ivanovich" depois de um certo tempo
+getUser(userNationality); // deve imprimir "Ivan is Russian" depois de um certo tempo
