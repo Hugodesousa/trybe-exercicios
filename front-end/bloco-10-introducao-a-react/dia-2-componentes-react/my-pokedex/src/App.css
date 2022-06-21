@@ -1,0 +1,23 @@
+.card {
+  background-color: rgb(253, 253, 253);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgb(101, 101, 101);
+}
+.pokecards {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  text-align: center;
+}
+.title {
+text-align: center;
+}
+#root {
+  display: flex;
+  justify-content: center;
+}
