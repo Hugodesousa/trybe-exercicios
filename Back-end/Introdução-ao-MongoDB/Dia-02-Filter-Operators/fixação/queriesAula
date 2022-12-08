@@ -1,0 +1,73 @@
+use('class');
+
+
+// 2000 ou antes <=
+db.filmes.find({ano: { $lte: 1993 }},{titulo: 1, ano: 1});
+
+// 1993 ou depois >=
+db.filmes.find({ano: { $gte: 1993 }},{titulo: 1, ano: 1});
+
+
+// 1993 ate 2000
+db.filmes.find({ano:{
+  $gte: 1993,
+  $lte: 2000
+}},{titulo: 1, ano: 1});
+
+
+// igual a 1993
+db.filmes.find({ano: 1993})
+
+// 7 avaliaçoe boas 
+db.filmes.find({"avaliacao.bom": 7})
+
+// avaliação ruin diferente de 8
+use('class');
+db.filmes.find({"avaliacao.ruim": {
+ $ne: 8
+}
+})
+
+// filme s dos anos 2001, 1968, 1995
+use('class');
+db.filmes.find({ano: {
+  $in: [2001, 1968, 1995]
+}})
+
+// filmes lançados nem 2013 nem 2008
+use('class');
+db.filmes.find({ano: {
+  $nin: [2013, 2008]
+}})
+
+// anos depois de 2000 e avaliação igual ou maio q 8 
+use('class');
+db.filmes.find({ano: {
+  $gte: 2000
+}, "avaliacao.bom": {
+  $gte: 8
+}})
+
+use('class');
+db.filmes.find({
+  $or:[
+  {ano: {$gte: 2000}, "avaliacao.bom": {$gte: 8}}
+  ]
+})
+
+// n mike 
+db.filmes.find({
+  diretor: {
+    $not: {
+      $eq: "Michael Bay"
+    }
+  }
+});
+
+// n mike n av 10 ruim 
+db.filmes.find({
+  $nor: {
+    { diretor: "Michael Bay" },
+    { "avaliacao.ruim": 10 }
+  }
+});

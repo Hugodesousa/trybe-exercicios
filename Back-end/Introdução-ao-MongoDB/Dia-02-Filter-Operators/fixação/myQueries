@@ -1,0 +1,37 @@
+use ('business')
+// Selecione e faça a contagem dos restaurantes presentes no bairro Queen
+use ('business')
+db.restaurants.countDocuments({ borough: { $eq: 'Queens' } });
+db.restaurants.find({ borough: { $eq: 'Queens' } });
+
+// Selecione e faça a contagem dos restaurantes presentes nos bairros Queens, Staten Island e Bronx. (utilizando o atributo borough)
+use ('business')
+db.restaurants.countDocuments({ borough: { $in: ["Queens", "Staten Island", "Bronx"] } });
+db.restaurants.find({ borough: { $in: ["Queens", "Staten Island", "Bronx"] } });
+
+// Selecione e faça a contagem dos restaurantes que não possuem culinária do tipo American. (utilizando o atributo cuisine)
+use ('business')
+db.restaurants.find({ cuisine: { $ne: 'American' } });
+db.restaurants.countDocuments({ cuisine: { $ne: 'American' } });
+
+// Selecione e faça a contagem dos restaurantes que possuem avaliação maior ou igual a 8. (utilizando o atributo rating)
+use ('business')
+db.restaurants.find({ rating: { $gte: 8 } });
+db.restaurants.countDocuments({ rating: { $gte: 8 } });
+
+// Selecione e faça a contagem dos restaurantes que não possuem as avaliações 5, 6 e 7.
+use ('business')
+db.restaurants.find({ rating: { $nin: [5, 6, 7] } });
+db.restaurants.countDocuments({ rating: { $nin: [5, 6, 7] } });
+
+// Ordene alfabeticamente os restaurantes pelo nome (atributo name).
+use ('business')
+db.restaurants.find({}, { name: 1 }).sort({ name: 1 });
+
+//Ordene os restaurantes de forma decrescente baseado nas avaliações.
+
+use ('business')
+db.restaurants.find({}, { name: 1, rating: 1, _id: -1 }).sort({ rating: -1 });
+
+use ('class')
+db.superheroes.find({alignment: {$eq: 'bad'}});
