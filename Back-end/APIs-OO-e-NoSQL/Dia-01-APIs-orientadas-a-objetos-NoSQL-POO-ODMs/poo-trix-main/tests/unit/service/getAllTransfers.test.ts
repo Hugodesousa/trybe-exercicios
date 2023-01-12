@@ -27,14 +27,13 @@ const inputArray = [
 describe('Deveria buscar todas as transferências', function () {
   it('Deveria buscar todas as transferências com SUCESSO', async function () {
     // Arrange
-    const paymentOutput = inputArray.map((item) => new Payment(
-      item.payByPerson,
-      item.payToPerson,
-      item.amount,
-      item.key,
-      item.id,
-      // item.status,
-    ));
+    const paymentOutput = inputArray.map((item) => new Payment({      
+      payByPerson: item.payByPerson,
+      payToPerson: item.payToPerson,
+      amount: item.amount,
+      key: item.key,
+      id: item.id,
+    }));
 
     sinon.stub(Model, 'find').resolves(paymentOutput);
 

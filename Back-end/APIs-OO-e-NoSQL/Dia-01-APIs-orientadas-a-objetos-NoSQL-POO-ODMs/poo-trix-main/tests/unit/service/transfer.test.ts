@@ -14,13 +14,14 @@ describe('Deveria criar uma transferência TRIX', function () {
       amount: 50000,
       key: '858.898.670-16',
     };
-    const paymentOutput: Payment = new Payment(
-      'Jobs',
-      'Wozniak',
-      50000,
-      '858.898.670-16',
-      '63319d80feb9f483ee823ac5',
-    );
+    const paymentOutput: Payment = new Payment({
+      payByPerson: 'Jobs',
+      payToPerson: 'Wozniak',
+      amount: 50000,
+      key: '858.898.670-16',
+      id: '63319d80feb9f483ee823ac5',
+
+    });
     sinon.stub(Model, 'create').resolves(paymentOutput);
 
     // Act

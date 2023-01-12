@@ -12,13 +12,13 @@ class TransferService {
 
   private createPaymentDomain(payment: IPayment | null): Payment | null {
     if (payment) {
-      return new Payment(
-        payment.payByPerson,
-        payment.payToPerson,
-        payment.amount,
-        payment.key,
-        payment.id,
-      );
+      return new Payment({
+        payByPerson: payment.payByPerson,
+        payToPerson: payment.payToPerson,
+        amount: payment.amount,
+        key: payment.key,
+        id: payment.id,
+      });
     }
     return null;
   }
