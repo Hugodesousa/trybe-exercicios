@@ -28,9 +28,26 @@ class TransferService {
     // Criar instância da Model de Payment usando Mongoose
     const paymentODM = new PaymentODM();
     // Inserir os dados no banco
-    const newPayment = await paymentODM.create(payment)
+    const newPayment = await paymentODM.create(payment);
     // Retornar os dados com o id
     return this.createPaymentDomain(newPayment);
+  }
+
+  public async getAllTransfers() {
+    const paymentODM = new PaymentODM();
+    const payments = await paymentODM.find();
+    const paymentArray = payments.map((payment) =>
+      this.createPaymentDomain(payment));
+    return paymentArray;
+  }
+
+  public async getByKey(key: string) {
+    const paymentODM = new PaymentODM();
+    const payments = await paymentODM.findByKey(key);
+    const paymentArray = payments
+      .map((payment) => this
+        .createPaymentDomain(payment));
+    return paymentArray;
   }
 }
 

@@ -25,6 +25,14 @@ class PaymentODM {
   public async create(payment: IPayment): Promise<IPayment> {
     return this.model.create({ ...payment });
   }
+
+  public async find(): Promise<IPayment[]> {
+    return this.model.find();
+  }
+
+  public async findByKey(key: string): Promise<IPayment[]> {
+    return this.model.find({ key });
+  }
 }
 
 export default PaymentODM;
