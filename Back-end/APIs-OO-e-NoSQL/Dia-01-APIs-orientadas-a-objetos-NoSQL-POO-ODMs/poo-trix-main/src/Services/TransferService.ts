@@ -2,9 +2,13 @@
 
 import Payment from '../Domain/Payment';
 import IPayment from '../Interfaces/IPayment';
-import PaymentODM from '../Models/PaymentODM';
+import PaymentODM, { IPaymentODM } from '../Models/PaymentODM';
 
 class TransferService {
+  // constructor(
+  //   private paymentODM: IPaymentODM,
+  // ) {}
+
   private isValidKey(key: string): boolean {
     const cpfRegex = /^\d{3}.\d{3}.\d{3}-\d{2}$/;
     return cpfRegex.test(key);
@@ -32,6 +36,13 @@ class TransferService {
     // Retornar os dados com o id
     return this.createPaymentDomain(newPayment);
   }
+
+  // public async undoTransfer(id: string) {
+  //   const paymentObject = await this.paymentODM.find(id);
+  //   const payment = new Payment(paymentObject);
+  //   payment.undo(new Date());
+  //   this.paymentODM.update(payment);
+  // }
 
   public async getAllTransfers() {
     const paymentODM = new PaymentODM();

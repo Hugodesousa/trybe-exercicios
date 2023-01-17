@@ -6,7 +6,8 @@ type PaymentParams = {
   amount: number,
   key: string,
   id?: string,
-  status?: PaymentStatus
+  status?: PaymentStatus,
+  // date?: Date,
 };
 
 class Payment {
@@ -16,6 +17,7 @@ class Payment {
   private amount: number;
   private key: string;
   private status: PaymentStatus;
+  // private date: Date;
 
   constructor(params: PaymentParams) {
     this.id = params.id;
@@ -24,11 +26,19 @@ class Payment {
     this.amount = params.amount;
     this.key = params.key;
     this.status = params.status || PaymentStatus.concluded;
+    // this.date = params.date || new Date();
   }
 
-  undo() {
+  undo(undoDate: Date) {
+    // if (this.isExpiredForUndo(undoDate)) {
+    //   throw new Error('invalid undo operation');
+    // }
     this.status = PaymentStatus.reversed;
   }
+
+  // private isExpiredForUndo(date: Date): boolean {
+  //   return date.getTime() - this.date.getTime() > 25920000000;
+  // }
 
   getStatus() {
     return this.status;

@@ -6,7 +6,14 @@ import {
   model,
   models,
 } from 'mongoose';
+import Payment from '../Domain/Payment';
 import IPayment from '../Interfaces/IPayment';
+
+export interface IPaymentODM {
+  create(payment: IPayment): Promise<IPayment>
+  find(id: string): Promise<IPayment>
+  update(payment: Payment): Promise<void>
+}
 
 class PaymentODM {
   private schema: Schema; // Atributo para o "molde"

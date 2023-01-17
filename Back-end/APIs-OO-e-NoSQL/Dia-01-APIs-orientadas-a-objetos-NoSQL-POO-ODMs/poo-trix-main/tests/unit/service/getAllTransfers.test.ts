@@ -5,6 +5,7 @@ import PaymentStatus from '../../../src/utils/PaymentStatus';
 import TransferService from '../../../src/Services/TransferService';
 import Payment from '../../../src/Domain/Payment';
 
+// const myDate = new Date('2023-01-13T13:57:45.528Z');
 const inputArray = [
   {
     payByPerson: 'José',
@@ -13,6 +14,7 @@ const inputArray = [
     key: '329.310.890-36',
     status: PaymentStatus.concluded,
     id: '63320b77aa12f0db4f210afe',
+    // date: myDate,
   },
   {
     payByPerson: 'Maria',
@@ -21,6 +23,7 @@ const inputArray = [
     key: '478.966.190-32',
     status: PaymentStatus.concluded,
     id: '63320b77aa12f0db4f210b00',
+    // date: myDate,
   },
 ];
 
@@ -33,6 +36,7 @@ describe('Deveria buscar todas as transferências', function () {
       amount: item.amount,
       key: item.key,
       id: item.id,
+      // date: myDate,
     }));
 
     sinon.stub(Model, 'find').resolves(paymentOutput);

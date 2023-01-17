@@ -1,11 +1,14 @@
 // src/Interfaces/IPayment.ts
 
+// import PaymentStatus from '../Domain/PaymentStatus';
+
 interface IPayment {
-  id?: string
+  id?: string;
   payByPerson: string;
   payToPerson: string;
   amount: number;
   key: string;
+  // status: PaymentStatus;
 }
 
 export default IPayment;

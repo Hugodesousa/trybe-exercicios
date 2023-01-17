@@ -8,7 +8,7 @@ describe('Payment', function () {
       payByPerson: 'Jobs',
       payToPerson: 'Wozniak',
       amount: 50000,
-      key: '858.898.670-16',
+      key: '858.898.630-16',
       id: 'any',
     });
 
@@ -36,7 +36,7 @@ describe('Payment', function () {
       amount: 50000,
       key: '858.898.670-16',
       id: 'any',
-      date: new Date('2022-10-10'),
+      // date: new Date('2022-10-10'),
     });
 
     expect(() => {
